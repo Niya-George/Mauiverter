@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Mauiverter.MVVM.Views.ConverterView"
+             Title="{Binding QuantityName}">
+
+    <ContentPage.Resources>
+        <Color x:Key="color1">#0047b3</Color>
+        <Color x:Key="color2">#66a3ff</Color>
+        <Color x:Key="color3">#3385ff</Color>
+        <Color x:Key="color4">#0066ff</Color>
+        <Color x:Key="color5">#005ce6</Color>
+        <Color x:Key="text">white</Color>
+        </ContentPage.Resources>
+
+
+        <Grid RowDefinitions="*,*">
+        <Grid Grid.Row="0" BackgroundColor="{StaticResource color1}">
+        <Entry 
+               HorizontalOptions="Center" 
+               VerticalOptions="Center"  
+               Text="{Binding FromValue}"
+               FontAttributes="Bold"
+               TextColor="Black"  FontSize="50"
+               ReturnCommand="{Binding ReturnCommand}"
+               Placeholder="enter"/>
+              
+            <Picker 
+            HorizontalOptions="Center"
+            ItemsSource="{Binding FromMeasures}"
+            SelectedItem="{Binding CurrentFromMeasure}"
+            SelectedIndexChanged="Picker_SelectedIndexChanged"/>
+        </Grid>
+    
+        <Grid Grid.Row="1" BackgroundColor="{StaticResource color2}" >
+            
+            <Label 
+            HorizontalOptions="Center" 
+            VerticalOptions="Center"  
+            FontAttributes="Bold"
+            TextColor="Black" 
+            FontSize="50" 
+            Text="{Binding ToValue, StringFormat='{0:0.##}'}"/>
+
+            <Picker 
+            HorizontalOptions="Center"
+            ItemsSource="{Binding ToMeasures}"
+            SelectedItem="{Binding CurrentToMeasure}"
+            SelectedIndexChanged="Picker_SelectedIndexChanged"/>
+
+        </Grid>
+    </Grid>
+</ContentPage>
