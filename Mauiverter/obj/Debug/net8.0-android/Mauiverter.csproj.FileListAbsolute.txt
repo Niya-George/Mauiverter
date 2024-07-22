@@ -1045,3 +1045,4 @@ C:\Users\P10\source\repos\Mauiverter\Mauiverter\obj\Debug\net8.0-android\Mauiver
 C:\Users\P10\source\repos\Mauiverter\Mauiverter\obj\Debug\net8.0-android\Mauiverter.csproj.Fody.RuntimeCopyLocal.cache
 C:\Users\P10\source\repos\Mauiverter\Mauiverter\obj\Debug\net8.0-android\android\assets\PropertyChanged.dll
 C:\Users\P10\source\repos\Mauiverter\Mauiverter\obj\Debug\net8.0-android\resizetizer\f\fontello.ttf
+C:\Users\P10\source\repos\Mauiverter\Mauiverter\obj\Debug\net8.0-android\Mauiverter.sourcelink.json

@@ -51,13 +51,22 @@ namespace Mauiverter.MVVM.ViewModel
 
         private ObservableCollection<string> LoadMeasures()
         {
-            var types =
-                Quantity.Infos
-                .FirstOrDefault(x => x.Name == QuantityName)
-                .UnitInfos
-                .Select(u => u.Name)
-                .ToList();
-            return new ObservableCollection<string>(types);
+            List<string> types = null;
+            if (  types == null) {
+                return null;
+               
+            }
+            else
+            {
+                types =
+                   Quantity.Infos
+                   .FirstOrDefault(x => x.Name == QuantityName)
+                   .UnitInfos
+                   .Select(u => u.Name)
+                   .ToList();
+                        return new ObservableCollection<string>(types);
+            }
+
         }
     }
 }

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Mauiverter")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+1aafcd5e142fa191e55b237aa1af727f4dfa4fcd")]
 [assembly: System.Reflection.AssemblyProductAttribute("Mauiverter")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Mauiverter")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
